@@ -1,0 +1,27 @@
+img {
+    height:300px;
+    width:300px;
+    justify-content: center;
+}
+
+
+
+.articles {
+    text-align: center;
+    
+}
+
+
+li {
+    margin:100px;
+    list-style-type: none;
+}
+
+
+
+p {
+    margin-left: 35%;
+    flex-direction: row;
+    display: flex;
+    
+}
