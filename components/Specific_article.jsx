@@ -7,11 +7,11 @@ function Specific_article (props) {
     const [article, setArticle] = useState({})
    
 const {article_id} = useParams()
-console.log(article_id)
+
 useEffect(()=> {
 
      getArticleById(article_id).then((articleObj)=> {
-        console.log(articleObj.data)
+    
         setArticle(articleObj.data)
 
     })
