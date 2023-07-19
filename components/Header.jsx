@@ -1,12 +1,14 @@
 
-
+import { Link } from "react-router-dom"
 function Header() {
  
 
     return (
-      <section>
-        <h1>Header</h1>
-      </section>
+      <>
+      <Link to='/articles'>
+     <h1 className="header">Articles</h1>
+     </Link>
+    </>
     )
   }
   

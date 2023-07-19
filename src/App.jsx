@@ -12,10 +12,11 @@ function App() {
 
   return (
     <section>
+      <Header />
       <Routes>
 
 
-        <Route path="/" element={<Header />} />
+        
         <Route path="/articles" element={<Articles articles={articles} setArticles={setArticles} />} />
         <Route path="/articles/:article_id" element={<Specific_article  />} />
 

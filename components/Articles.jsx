@@ -8,10 +8,11 @@ function Articles(props) {
 
     useEffect(()=> {
 
-        getArticles().then((res)=> {
+        getArticles().then((articles)=> {
+       
+       props.setArticles(articles)
          
-        props.setArticles(res.data.articles)
-        })
+       })
     }, [])
    
    
