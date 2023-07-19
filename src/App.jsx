@@ -1,22 +1,26 @@
-import Articles from "../components/Articles"
-import dropDownBox from "../components/dropDownBox"
+
 import Header from "../components/Header"
-import Topics from "../components/Topics"
+import Articles from "../components/Articles"
+import Specific_article from "../components/Specific_article"
 import { useState } from "react"
 
-
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
- 
-       const [articles, setArticles] = useState([])
+
+  const [articles, setArticles] = useState([])
+
   return (
     <section>
-      <Header/>
-      <Articles articles={articles} setArticles={setArticles}/>
-      <Topics/>
-      <dropDownBox/>
+      <Routes>
 
 
+        <Route path="/" element={<Header />} />
+        <Route path="/articles" element={<Articles articles={articles} setArticles={setArticles} />} />
+        <Route path="/articles/:article_id" element={<Specific_article  />} />
+
+
+      </Routes>
 
     </section>
   )

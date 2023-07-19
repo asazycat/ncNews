@@ -12,3 +12,9 @@ export const getArticles = () => {
 }
 
 
+
+export const getArticleById = (article_id) => {
+
+return apiArticle.get(`/articles/${article_id}`)
+}
+
