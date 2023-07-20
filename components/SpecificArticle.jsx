@@ -2,8 +2,27 @@
 import { getArticleById } from '../util.js/util'
 import { useEffect,useState } from 'react'
 import {useParams} from 'react-router-dom'
+
+
+
+
+
 import Upvotes from './Upvotes'
+
+
+
+
+
+
+
+
+
 function Specific_article () {
+
+
+
+
+    
      const [votes,setVotes] = useState(0)
     const [article, setArticle] = useState({})
     const [isLoading, setIsLoading] = useState(true);
