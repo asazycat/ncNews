@@ -2,6 +2,7 @@
 import { getArticleById } from '../util.js/util'
 import { useEffect,useState } from 'react'
 import {useParams} from 'react-router-dom'
+import Comments from './Comments'
 function Specific_article () {
 
     const [article, setArticle] = useState({})
@@ -37,15 +38,13 @@ return (
     <p id='author'>Created By: {article.author}</p>
      <p id='date'>Created At: {article.created_at}</p>    
     </div>
-    <div class ='comments'>
+    <div className ='comments'>
         
     </div>
     </div>
-    <h1 className='commentTitle'>Comments</h1>
-    <ul>
-        <li className ='eachComment'>comment1</li>
-    </ul>
 
+    
+     <Comments article_id={article_id}/>
     </>
 )
 
