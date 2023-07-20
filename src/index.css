@@ -96,3 +96,19 @@ body {
 
     font-size: 2rem;
 }
+
+
+
+.commentTitle {
+    margin-left: 10%;
+    border:5px solid purple;
+    margin-right:10%;
+}
+
+
+
+
+.eachComment {
+    margin-left:10%;
+    width:68.5%
+}

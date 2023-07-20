@@ -22,7 +22,7 @@ useEffect(()=> {
 if (isLoading) return <p>Loading...</p>
 
 return (
-
+<>
     <div className='article'>
         
     <h1 id='articleH1'> {article.title}</h1>
@@ -37,7 +37,16 @@ return (
     <p id='author'>Created By: {article.author}</p>
      <p id='date'>Created At: {article.created_at}</p>    
     </div>
+    <div class ='comments'>
+        
     </div>
+    </div>
+    <h1 className='commentTitle'>Comments</h1>
+    <ul>
+        <li className ='eachComment'>comment1</li>
+    </ul>
+
+    </>
 )
 
 
