@@ -2,8 +2,9 @@
 import { getArticleById } from '../util.js/util'
 import { useEffect,useState } from 'react'
 import {useParams} from 'react-router-dom'
+import Upvotes from './Upvotes'
 function Specific_article () {
-
+     const [votes,setVotes] = useState(0)
     const [article, setArticle] = useState({})
     const [isLoading, setIsLoading] = useState(true);
 const {article_id} = useParams()
@@ -30,14 +31,15 @@ return (
     <img src={article.article_img_url} id="specificImg" alt={article.title}></img>
     <br/>
     <p id='des' className="articleBody">{article.body}</p>
-    
+   
     </div>
     
     <div className='dateAuthor'>
     <p id='author'>Created By: {article.author}</p>
      <p id='date'>Created At: {article.created_at}</p>    
+    <Upvotes votes={article.votes} setVotes={setVotes} id={article.article_id}/>
     </div>
-    <div class ='comments'>
+    <div className ='comments'>
         
     </div>
     </div>

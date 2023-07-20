@@ -28,6 +28,19 @@ return apiArticle.get(`/articles/${article_id}`).then((article)=> {
 
 
 
+export const upvoteArticle = (article_id) => {
+
+
+return apiArticle.patch(`/articles/${article_id}`,{ inc_votes : 1}).then((res)=>
+{
+ 
+  return res.data
+})
+}
+
+
+
+
 
 
 
