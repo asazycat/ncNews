@@ -5,7 +5,7 @@ function eachComment (props)
     return (
         <>
         
-        <li key={eachComment.comment_id} className='eachComment'>
+        <li key={eachComment.comment_id} className='eachComment' >
 
             <h1 className="commentTitle">Username: {eachComment.author}</h1>
             
