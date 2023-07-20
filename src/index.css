@@ -111,6 +111,12 @@ body {
 
 
 
+.eachComment {
+    margin-left:10%;
+    width:68.5%;
+    padding:0px;
+    font-size: 15px;
+}
 
 
 #mainH {
