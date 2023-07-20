@@ -1,21 +1,24 @@
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { getArticles } from '../util.js/util'
 import Article from './Article'
 
 function Articles(props) {
- 
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  const {setArticles} = props
 
     useEffect(()=> {
 
-        getArticles().then((articles)=> {
+        getArticles().then(({articles})=> {
        
-       props.setArticles(articles)
-         
+       setArticles(articles)
+         setIsLoading(false)
        })
     }, [])
    
-   
+    if (isLoading) return <p>Loading...</p>
 
     return (
         

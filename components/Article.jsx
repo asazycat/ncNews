@@ -1,4 +1,4 @@
-import specific_article from "./Specific_article"
+import specific_article from "./SpecificArticle"
 import { useEffect, useState } from "react"
 import { Routes, Route, Link } from 'react-router-dom'
 

@@ -9,8 +9,8 @@ const apiArticle = axios.create({
 export const getArticles = () => {
    
   return apiArticle.get('/articles').then((res)=> {
-    const {articles} = res.data
-      return articles
+  
+      return res.data
    })
 }
 

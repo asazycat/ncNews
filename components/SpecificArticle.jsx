@@ -5,7 +5,7 @@ import {useParams} from 'react-router-dom'
 function Specific_article () {
 
     const [article, setArticle] = useState({})
-   
+    const [isLoading, setIsLoading] = useState(true);
 const {article_id} = useParams()
 
 useEffect(()=> {
@@ -13,11 +13,13 @@ useEffect(()=> {
     getArticleById(article_id).then((articleObj)=> {
     
         setArticle(articleObj)
-
+        setIsLoading(false)
     })
 
 
 },[])
+
+if (isLoading) return <p>Loading...</p>
 
 return (
 
