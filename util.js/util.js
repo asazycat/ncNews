@@ -46,6 +46,17 @@ return apiArticle.patch(`/articles/${article_id}`,{ inc_votes : 1}).then((res)=>
 
 
 
+export const postComment = (article_id,text,user) => {
+
+return apiArticle.post(`/articles/${article_id}/comments`, {username:'cooljmessy', body:text}).then((res)=> {
+  console.log(res.data)
+  return res.data
+}).catch((err)=> console.log(err))
+}
+
+
+
+
 
 
 
