@@ -34,7 +34,7 @@ export const upvoteArticle = (article_id) => {
 return apiArticle.patch(`/articles/${article_id}`,{ inc_votes : 1}).then((res)=>
 {
  
- 
+ console.log(res.data.votes,"api")
   return res.data
 })
 }

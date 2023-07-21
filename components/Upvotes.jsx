@@ -4,48 +4,43 @@
 import {useEffect, useState} from 'react'
 import {upvoteArticle} from '../util.js/util'
 
-
-
-
-
-
-
 function Upvotes(props) {
     const {id,setVotes,votes} = props
    const [newVote, setNewVotes] = useState(votes)
-   const [firstEffect,setFirstEffect] = useState(false)
-   
-   
-    useEffect(()=> {
+ 
+   const [errMsg, setErrMsg] = useState('')
+   const arr1 = [newVote]
+   const arr2 = [...arr1]
+  
        
-      
-    if (firstEffect)
-    {
+  function handleOnclick() {
+  
+          setNewVotes(arr2[0] = arr2[0]+1)       
           setVotes(newVote)
           
          
           
-       upvoteArticle(id)
-         }
+       upvoteArticle(id).catch((err)=> {
+        const {message} = err
+        setErrMsg(message)
+        setNewVotes(arr2[0] = arr2[0]-1)
+    
+    })
+         
           
-        }   
-        ,[newVote])
-
+     
+        }
+      
    
 
 return (
 
- <p><button onClick={()=> {setNewVotes(newVote+1) 
-    setFirstEffect(true)}} >Upvote: </button>  {newVote}</p>
+ <p><button onClick={handleOnclick}>        
+    Upvote: </button>  {newVote} {errMsg}</p>
     
 )
 
 }
-
-
-
-
-
 
 
 export default Upvotes
