@@ -17,7 +17,7 @@ function Upvotes(props) {
   
           setNewVotes(arr2[0] = arr2[0]+1)       
           setVotes(newVote)
-          
+           setErrMsg('') 
          
           
        upvoteArticle(id).catch((err)=> {
