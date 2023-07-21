@@ -17,6 +17,7 @@ function Comments (props) {
         getCommentsByArticleId(article_id).then((({comments}) => {
        
             setComments(comments)
+            setPosted('')
            
         }))
     },[posted])
