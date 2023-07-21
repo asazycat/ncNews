@@ -80,7 +80,7 @@ p {
     display: inline;
     
     width: 350px;
-    
+  
     margin-right:0;
     
 }
@@ -110,9 +110,10 @@ body {
 
 
 
+
+
+
 .eachComment {
     margin-left:10%;
-    width:68.5%;
-    padding:0px;
-    font-size: 15px;
+    width:68.5%
 }
