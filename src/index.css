@@ -103,6 +103,8 @@ body {
     margin-left: 10%;
     border:5px solid purple;
     margin-right:10%;
+    text-align: left;
+    margin-bottom:0px;
 }
 
 
@@ -113,13 +115,5 @@ body {
 
 .eachComment {
     margin-left:10%;
-    width:68.5%;
-    padding:0px;
-    font-size: 15px;
-}
-
-
-#mainH {
-    color:white;
-    background-color:brown;
+    width:68.5%
 }

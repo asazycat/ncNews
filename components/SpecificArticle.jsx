@@ -2,9 +2,6 @@
 import { getArticleById } from '../util.js/util'
 import { useEffect,useState } from 'react'
 import {useParams} from 'react-router-dom'
-
-import Upvotes from './Upvotes'
-
 function Specific_article () {
 const [votes,setVotes] = useState(0)
     const [article, setArticle] = useState({})
@@ -45,11 +42,9 @@ return (
         
     </div>
     </div>
-    <h1 className='commentTitle'>Comments</h1>
-    <ul>
-        <li className ='eachComment'>comment1</li>
-    </ul>
 
+    
+     <Comments article_id={article_id}/>
     </>
 )
 

@@ -8,7 +8,7 @@ const apiArticle = axios.create({
 
 export const getArticles = () => {
    
-  return apiArticle.get('/articles').then((res)=> {
+   return apiArticle.get('/articles').then((res)=> {
   
       return res.data
    })
@@ -18,7 +18,7 @@ export const getArticles = () => {
 
 export const getArticleById = (article_id) => {
 
-return apiArticle.get(`/articles/${article_id}`).then((article)=> {
+ return apiArticle.get(`/articles/${article_id}`).then((article)=> {
  
   return article.data
 
@@ -26,7 +26,12 @@ return apiArticle.get(`/articles/${article_id}`).then((article)=> {
 }
 
 
-
+export const getCommentsByArticleId = (article_id) => {
+   return apiArticle.get(`/articles/${article_id}/comments`).then((res)=> {
+   
+    return res.data
+   })
+}
 
 export const upvoteArticle = (article_id) => {
 
