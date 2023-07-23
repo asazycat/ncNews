@@ -2,7 +2,7 @@
 
 
 import {useEffect, useState} from 'react'
-import {upvoteArticle} from '../util.js/util'
+import {upvoteArticle,downArticle} from '../util.js/util'
 
 function Upvotes(props) {
     const {id,setVotes,votes} = props
@@ -30,14 +30,35 @@ function Upvotes(props) {
           
      
         }
+
+
+
+        function handleOnclick2() {
+  
+            setNewVotes(arr2[0] = arr2[0]-1)       
+            setVotes(newVote)
+             setErrMsg('') 
+           
+            
+         downArticle(id).catch((err)=> {
+          const {message} = err
+          setErrMsg(message)
+          setNewVotes(arr2[0] = arr2[0]+1)
       
+      })
+         
+    }
    
 
 return (
-
- <p><button onClick={handleOnclick}>        
-    Upvote: </button>  {newVote} {errMsg}</p>
-    
+<div id='votes'>
+<p>{newVote} {errMsg}</p>
+ <button onClick={handleOnclick}>        
+    Upvote: </button> 
+  <button onClick={handleOnclick2}>        
+  Downvote: </button>  
+ 
+  </div>
 )
 
 }

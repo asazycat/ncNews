@@ -11,9 +11,9 @@ function Article(props) {
 
 
     return (
-        <>
-
-            <Link to={`/articles/${eachArticle.article_id}`}>
+        <div className='gridItem'>
+            
+            <Link to={`/articles/${eachArticle.article_id}` } className='eachArticle'>
 
                 <li key={props.eachArticle.article_id}>
                     <img src={eachArticle.article_img_url} alt={eachArticle.title} />
@@ -39,7 +39,7 @@ function Article(props) {
                 </li>
             </Link>
 
-        </>
+        </div>
     )
 
 
