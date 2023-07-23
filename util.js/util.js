@@ -38,18 +38,28 @@ export const upvoteArticle = (article_id) => {
 
 return apiArticle.patch(`/articles/${article_id}`,{ inc_votes : 1}).then((res)=>
 {
- 
+   console.log(res.data.votes)
   return res.data
 })
 }
 
 
+export const downArticle = (article_id) => {
+
+
+   return apiArticle.patch(`/articles/${article_id}`,{ inc_votes : -1}).then((res)=>
+   {
+      console.log(res.data.votes)
+     return res.data
+   })
+   }
+   
 
 
 export const postComment = (article_id,text,user) => {
 
 return apiArticle.post(`/articles/${article_id}/comments`, {username:'cooljmessy', body:text}).then((res)=> {
- 
+
   return res.data
 }).catch((err)=> console.log(err))
 }

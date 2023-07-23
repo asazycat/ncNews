@@ -22,8 +22,8 @@ function Articles(props) {
 
     return (
         
-      <div className="articles">
-      <ul>
+      <div className="grid">
+      <ul className='articlesList'>
          {
             props.articles.map((eachArticle)=> {
                 return <Article eachArticle={eachArticle} key={eachArticle.article_id}/>

@@ -1,4 +1,153 @@
+.mainH {
+    margin:0px;
+    background-color: brown;
+    color:antiquewhite;
+    font-size:3rem;
+    display: inline-flex;
+    float: left;
+}
+
+
+
+
+body {
+    margin: 0px;
+}
+
+
+
+.nav {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    margin-left:0%;
+    background-color: brown;
+    height:3.45rem;
+}
+
+
+.nav > li {
+
+ margin-left:15%;
+ font-size: 2.5rem;
+ color: white;
+ 
+}
+
+a {
+    text-decoration:none;
+}
+
+.navLinks:link {
+    color: red;
+  }
+  
+  
+  .navLinks:visited {
+    color: white;
+  }
+  
+
+  .navLinks:hover {
+    color: yellow;
+  }
+  
+ 
+  .navLinks:active {
+    color: white;
+  }
+
+
+
+
+body {
+    background-color:burlywood;
+}
+
+
+
 img {
+
+   height: 250px;
+   width:300px;
+}
+
+
+.grid {
+row-gap: 50px;;
+}
+
+.gridItem {
+    display:inline-flex;
+    flex-direction: row;
+    width:25%}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* img {
     height:300px;
     width:300px;
     justify-content: center;
@@ -94,7 +243,7 @@ p {
 
 body {
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -141,4 +290,4 @@ body {
     width:45%;
     margin-left:auto;
     margin-right:auto ;
-}
+} */
