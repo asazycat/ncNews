@@ -1,9 +1,9 @@
 .mainH {
     margin:0px;
-    background-color: brown;
+    background-color: #BB2525;
     color:antiquewhite;
     font-size:3.0rem;
-    display: inline-flex;
+   
     float: left;
    
 }
@@ -22,7 +22,7 @@ body {
     margin: 0;
     list-style-type: none;
   
-    background-color: brown;
+    background-color: #BB2525;
     height:3.45rem;
    
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .navLinks:link {
-    color: red;
+    color: white;
   }
   
   
@@ -68,7 +68,7 @@ body {
 
 
 
-img {
+.imgPart {
 
   height: 150px;
   width:250px;
@@ -124,14 +124,14 @@ img {
 
 
 .articlesList {
-  border: 2px solid black;
+  
   width: 100em;
   margin:auto;
   
 }
 
 .articleBox {
-  border: 2px solid black;
+  border: 2px solid white;
   background-color: #BB2525;
   height:20em;
   border-radius: 5px;

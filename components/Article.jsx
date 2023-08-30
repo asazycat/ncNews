@@ -16,7 +16,7 @@ function Article(props) {
 
                 <li key={props.eachArticle.article_id}>
                     
-                    <img src={eachArticle.article_img_url} alt={eachArticle.title} />
+                    <img src={eachArticle.article_img_url} alt={eachArticle.title} className="imgPart"/>
                  
                     <p className="titlePart">
                         {eachArticle.title}
