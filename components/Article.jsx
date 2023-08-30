@@ -12,33 +12,29 @@ function Article(props) {
 
     return (
         <div className='gridItem'>
-            
-            <Link to={`/articles/${eachArticle.article_id}` } className='eachArticle'>
+            <section className ="articleBox">            <Link to={`/articles/${eachArticle.article_id}` } className='eachArticle'>
 
                 <li key={props.eachArticle.article_id}>
+                    
                     <img src={eachArticle.article_img_url} alt={eachArticle.title} />
-                    <br />
-                    <br />
-                    <br />
-                    <p>
+                 
+                    <p className="titlePart">
                         {eachArticle.title}
                     </p>
-                    <p>
-                        {eachArticle.author}
-                    </p>
-                    <p>
-                        {eachArticle.created_at}
-                    </p>
-                    <p>
-
-                        {eachArticle.votes}
-
-                    </p>
-
-
+                   
                 </li>
-            </Link>
+ </Link>
+            <p className="authorPart">
+                    By {eachArticle.author}   
+                    </p>
+                    <p className="upvotePart">
+                    Votes: {eachArticle.votes}    
+                    </p> 
 
+
+                    </section>
+                    
+                    
         </div>
     )
 
