@@ -159,7 +159,7 @@ a {
   width: 50em;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid black;
+  border: 5px solid white;
   padding:2em;
   align-content: center;
   background-color: #BB2525;
@@ -241,7 +241,7 @@ a {
 }
 
 .comment {
-  border: 2px solid yellow;
+  border: 2px solid white;
   background-color: #BB2525;
   color: white;
   margin-top: 5%;
@@ -260,7 +260,7 @@ a {
   margin-top: 5%;
   margin-left: 15%;
   display:block ;
-  border: 2px solid yellow;
+  border: 2px solid white;
   background-color: #BB2525;
   color: white;
   height: 15em;
