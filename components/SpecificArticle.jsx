@@ -27,26 +27,31 @@ return (
 <>
     <div className='article'>
         
-    <h1 id='articleH1'> {article.title}</h1>
-    <div className="articleBody">
-    <img src={article.article_img_url} id="specificImg" alt={article.title}></img>
-    <br/>
-    <p id='des' className="articleBody">{article.body}</p>
-   
+    <h1 className='articleH1'> {article.title}</h1>
+    <div className='imgDiv'>
+    <img src={article.article_img_url} className="specificImg" alt={article.title}></img>
     </div>
-    
     <div className='dateAuthor'>
-    <p id='author'>Created By: {article.author}</p>
-     <p id='date'>Created At: {article.created_at}</p>    
-    <Upvotes votes={article.votes} setVotes={setVotes} id={article.article_id}/>
+    <p className='author'>Created By: {article.author}</p>
+     <p className='date'>Created At: {article.created_at}</p>    
+     
     </div>
-    <div className ='comments'>
-        
-    </div>
-    </div>
+   
+    
+    
+    <p className="articleBody">{article.body}</p>
 
     
-     <Comments article_id={article_id}/>
+    
+    <Upvotes votes={article.votes} setVotes={setVotes} id={article.article_id}/>
+
+   
+
+    
+    </div>
+
+    <Comments article_id={article_id}/>
+     
     </>
 )
 

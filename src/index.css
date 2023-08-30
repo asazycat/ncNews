@@ -13,6 +13,7 @@
 
 body {
     margin: 0px;
+    background-color:burlywood;
 }
 
 
@@ -62,9 +63,6 @@ a {
 
 
 
-body {
-    background-color:burlywood;
-}
 
 
 
@@ -156,6 +154,77 @@ body {
   margin-left: 2%;
 }
 
+.article {
+  margin-top: 5%;
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  padding:2em;
+  align-content: center;
+  background-color: #BB2525;
+  color: white;
+}
+
+.articleH1 {
+  text-align: center;
+  background-color: #BB2525;
+  color: white;
+  padding:1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.imgDiv {
+  
+  text-align: center;
+}
+
+.specificImg {
+   height: 25em;
+   width: 100%;
+  
+}
+
+
+.buttons {
+  display:flex;
+  align-items: center;
+  width:5em;
+  height: 0.5em;
+  
+  
+}
+
+.voteMsg {
+  font-size: 2em;
+  text-align: right;
+}
+
+.voteButton {
+  font-size: 2em;
+  background-color:#BB2525;
+  padding:0px;
+  border: none;
+  margin-left: 5px;
+  text-align: right;
+}
+.dateAuthor {
+  
+  text-align: right;
+}
+
+.commentTitle {
+  text-align: center;
+  
+}
+
+.articleBody {
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 
 
 
@@ -165,24 +234,39 @@ body {
 
 
 
+.listOfComments {
+  background-color: ;
+  
+  
+}
+
+.comment {
+  border: 2px solid yellow;
+  background-color: #BB2525;
+  color: white;
+  margin-top: 5%;
+  border-radius: 2em;
+  padding:1em;
+  width:55em;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cat {
+  display: flex;
+  
+}
+.postComment {
+  margin-top: 5%;
+  margin-left: 15%;
+  display:block ;
+  border: 2px solid yellow;
+  background-color: #BB2525;
+  color: white;
+  height: 15em;
+  border-radius: 2em;
+  padding: 1em
+}
 
 
 

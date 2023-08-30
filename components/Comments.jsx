@@ -26,16 +26,16 @@ function Comments (props) {
 
 
     return (
-    <>
-   <h1 className="commentTitle">Comments </h1>
+    <div className="cat">
+   
   
-    <ul>
-     
+    <ul className="listOfComments">
+    
      {comments.map(eachComment=> {return <EachComment eachComment={eachComment} key={eachComment.comment_id}/>})}
 </ul>
     
 <PostComment article_id={article_id} posted={posted} setPosted={setPosted}/>
-    </>
+    </div>
 
     )
 
