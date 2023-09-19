@@ -1,6 +1,5 @@
-import specific_article from "./SpecificArticle"
-import { useEffect, useState } from "react"
-import { Routes, Route, Link } from 'react-router-dom'
+
+import {  Link } from 'react-router-dom'
 
 
 function Article(props) {
@@ -14,7 +13,7 @@ function Article(props) {
         <div className='gridItem'>
             <section className ="articleBox">            <Link to={`/articles/${eachArticle.article_id}` } className='eachArticle'>
 
-                <li key={props.eachArticle.article_id}>
+                <li key={eachArticle.article_id}>
                     
                     <img src={eachArticle.article_img_url} alt={eachArticle.title} className="imgPart"/>
                  

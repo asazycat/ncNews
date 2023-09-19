@@ -68,6 +68,23 @@ return apiArticle.post(`/articles/${article_id}/comments`, {username:'cooljmessy
 
 
 
+export const getTopics = () => {
 
+   return apiArticle.get('/topics').then((res)=> {
+  
+      return res.data
+   })
+}
 
+export const getArticlesByTopic = (topic) => {
+ 
+   return apiArticle.get('/articles').then((res)=> {
+      
+  
+            const filtered = res.data.articles.filter((eachArticle)=> { if(eachArticle.topic === topic) {return eachArticle}})
+            console.log(filtered)
+            return filtered
+      
+   })
+}
 

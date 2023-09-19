@@ -1,6 +1,7 @@
 
 import { useState } from "react"
 import {postComment} from '../util.js/util'
+
 function PostComment (props) {
 const {article_id,posted,setPosted} = props
 const [text, setText] = useState('')
