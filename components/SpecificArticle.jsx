@@ -11,7 +11,7 @@ const [votes,setVotes] = useState(0)
 const {article_id} = useParams()
 
 useEffect(()=> {
-
+      console.log(votes)
     getArticleById(article_id).then((articleObj)=> {
     
         setArticle(articleObj)
@@ -19,7 +19,7 @@ useEffect(()=> {
     })
 
 
-},[])
+})
 
 if (isLoading) return <p>Loading...</p>
 

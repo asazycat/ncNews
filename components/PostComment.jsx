@@ -1,16 +1,16 @@
 
 import { useState } from "react"
 import {postComment} from '../util.js/util'
-
+import PropTypes from 'prop-types';
 function PostComment (props) {
-const {article_id,posted,setPosted} = props
+const {article_id,setPosted} = props
 const [text, setText] = useState('')
-const [user, setUser] = useState('') 
+
 
     function handleSubmit (e) {
    
         e.preventDefault()
-        postComment(article_id,text,user)
+        postComment(article_id,text)
         setPosted(text)
 
         
@@ -49,6 +49,9 @@ const [user, setUser] = useState('')
 
 
 
-
+PostComment.propTypes = {
+    article_id: PropTypes.number,
+    setPosted: PropTypes.func
+}
 
 export default PostComment

@@ -1,5 +1,5 @@
 
-
+import PropTypes from 'prop-types';
 
 
 export default function EachTopic (props) {
@@ -15,3 +15,7 @@ export default function EachTopic (props) {
   
     )
 }
+
+EachTopic.propTypes = { 
+    topic: PropTypes.array
+  }

@@ -2,13 +2,14 @@
 import { useEffect, useState } from 'react'
 import { getArticles } from '../util.js/util'
 import Article from './Article'
+import PropTypes from 'prop-types';
 
 function Articles(props) {
 
   const [isLoading, setIsLoading] = useState(true);
-
-  const {setArticles} = props
-
+   
+  const {articles, setArticles} = props
+   
     useEffect(()=> {
 
         getArticles().then(({articles})=> {
@@ -16,7 +17,7 @@ function Articles(props) {
        setArticles(articles)
          setIsLoading(false)
        })
-    }, [])
+    })
    
     if (isLoading) return <p>Loading...</p>
 
@@ -25,7 +26,7 @@ function Articles(props) {
       <div className="grid">
       <ul className='articlesList'>
          {
-            props.articles.map((eachArticle)=> {
+            articles.map((eachArticle)=> {
                 return <Article eachArticle={eachArticle} key={eachArticle.article_id}/>
             })
          }
@@ -35,5 +36,10 @@ function Articles(props) {
       </div>
     )
   }
+
+  Articles.propTypes = { 
+    setArticles: PropTypes.func ,
+    articles: PropTypes.array
+  } 
   
   export default Articles

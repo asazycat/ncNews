@@ -1,6 +1,6 @@
 
 import {  Link } from 'react-router-dom'
-
+import PropTypes from 'prop-types';
 
 function Article(props) {
 
@@ -41,7 +41,10 @@ function Article(props) {
 
 }
 
-
+Article.propTypes = { 
+    eachArticle: PropTypes.array ,
+    
+  }
 
 
 

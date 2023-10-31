@@ -2,10 +2,11 @@ import { useEffect, useState } from "react"
 import { getArticlesByTopic, getTopics } from "../util.js/util"
 import EachTopic from "./EachTopic";
 import ArticlesFromTopic from "./ArticlesFromTopic";
-
+import PropTypes from 'prop-types';
 
 
 export default function Topics(props) {
+       console.log(props)
        const {topics,setTopics} = props
          
           const [isLoading, setIsLoading] = useState(true);
@@ -18,7 +19,7 @@ export default function Topics(props) {
         setTopics(topics)
           setIsLoading(false)
         })
-  }, [])
+  })
 
 
   useEffect(()=> {
@@ -47,7 +48,7 @@ export default function Topics(props) {
 <ul>
   <h1>{topic.slug}</h1>
   {arrayArticles.map((eachArticle)=> {
-   return <ArticlesFromTopic eachArticle={eachArticle}/>
+   return <ArticlesFromTopic eachArticle={eachArticle} key={eachArticle.article_id}/>
   })}
   
 </ul>
@@ -57,4 +58,7 @@ export default function Topics(props) {
     )
   }
 
-  
+  Topics.propTypes = { 
+    topics: PropTypes.array,
+    setTopics: PropTypes.func
+  }

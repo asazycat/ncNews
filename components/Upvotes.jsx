@@ -1,9 +1,9 @@
 
 
 
-import {useEffect, useState} from 'react'
+import { useState} from 'react'
 import {upvoteArticle,downArticle} from '../util.js/util'
-
+import PropTypes from 'prop-types';
 function Upvotes(props) {
     const {id,setVotes,votes} = props
    const [newVote, setNewVotes] = useState(votes)
@@ -68,5 +68,11 @@ return (
 
 }
 
+
+Upvotes.propTypes = { 
+    id: PropTypes.number,
+    votes: PropTypes.number,
+    setVotes: PropTypes.func
+  }
 
 export default Upvotes

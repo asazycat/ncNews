@@ -56,7 +56,7 @@ export const downArticle = (article_id) => {
    
 
 
-export const postComment = (article_id,text,user) => {
+export const postComment = (article_id,text) => {
 
 return apiArticle.post(`/articles/${article_id}/comments`, {username:'cooljmessy', body:text}).then((res)=> {
 

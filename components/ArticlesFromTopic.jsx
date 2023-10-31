@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types';
 export default function ArticlesFromTopic (props) {
     const {eachArticle} = props
     console.log('list atuff')
@@ -31,3 +32,7 @@ export default function ArticlesFromTopic (props) {
     </div>
     )
 }
+
+ArticlesFromTopic.propTypes = { 
+    eachArticle: PropTypes.array
+  } 
