@@ -4,9 +4,10 @@ function Header() {
  
 
     return (
-      
+      <div className="header">
+          <h1 className='mainH'>Northcoders News Network</h1>
       <nav>
-        <h1 className='mainH'>Northcoders News Network</h1>
+      
       <ul className="nav">
       
       <li><Link to='/' className="navLinks">
@@ -22,7 +23,13 @@ function Header() {
      </Link></li>
     
      </ul>
+     <div className="hamburger">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
     </nav>
+    </div>
     )
   }
   
