@@ -324,13 +324,15 @@ font-size: 2em;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  width: 100%;
+  margin-left: -4%;
 }
 .gridItem {
   
   display:inline-flex;
   flex-direction: row;
   margin-top:1%;
-  margin-left: -10%;
+
    width: 15em;
    padding: 2em;
  
@@ -404,7 +406,7 @@ margin-right: 5%;
   display:inline-flex;
   flex-direction: row;
   margin-top:1%;
- 
+  
    width: 15em;
    padding: 2em;
  
@@ -527,6 +529,7 @@ font-size: 2em;
       display: flex;
       flex-wrap: wrap;
       text-align: center;
+      margin-left: 1%;
     }
     .gridItem {
       
@@ -574,7 +577,7 @@ font-size: 2em;
     }
     
     .articleBox {
-    
+      border: 2px solid white;
     background-color: #BB2525;
     height:20em;
     border-radius: 5px;
@@ -645,7 +648,7 @@ font-size: 2em;
     }
     
     .articleBox {
-  
+      border: 2px solid white;
     background-color: #BB2525;
     height:20em;
     border-radius: 5px;
@@ -729,13 +732,14 @@ font-size: 2em;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  margin-left: 1%;
 }
 .gridItem {
   
   display:inline-flex;
   flex-direction: row;
   margin-top:1%;
- 
+  
    width: 15em;
    padding: 2em;
  
