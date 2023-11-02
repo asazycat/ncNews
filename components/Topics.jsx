@@ -10,7 +10,7 @@ export default function Topics(props) {
        const {topics,setTopics} = props
          
           const [isLoading, setIsLoading] = useState(true);
-          const [topic, setTopic] = useState('')
+          const [topic, setTopic] = useState('coding')
           const [arrayArticles, setArrayArticles] = useState([])
        
   useEffect(()=> {
