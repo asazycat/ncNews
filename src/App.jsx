@@ -7,6 +7,7 @@ import { useState } from "react"
 
 import { Routes, Route } from 'react-router-dom'
 import Topics from "../components/Topics"
+import Slideshow from "../components/Slideshow"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <section>
       <Header />
+      <Slideshow/>
       <Routes>
 
 

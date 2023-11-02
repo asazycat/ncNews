@@ -260,6 +260,28 @@ border-radius: 2em;
 padding: 1em
 }
 
+.slideImg {
+  
+  height: 30em;
+  width:50em;
+}
+.slideShow {
+  text-align: center;
+}
+
+.previousSlide , .nextSlide {
+
+border:0;
+background-color: #BB2525;
+color: aliceblue;
+margin-left: 5%;
+margin-top: 35%;
+font-size: 2em;
+}
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media only screen and (max-width: 750px) {
   
   .header {
