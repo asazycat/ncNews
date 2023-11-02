@@ -872,3 +872,182 @@ margin-right: 5%;
 }
 }
 
+@media only screen and (max-width: 370px) {
+  
+  .header {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+   background-color: brown;
+    font-size: 1em;
+    color: azure;
+  }
+
+  nav {
+    display:flex;
+   }
+     
+     
+     nav > .nav {
+      
+       display: flex;
+       flex-wrap: wrap;
+      flex-direction: column;
+       list-style-type: none;
+      font-size: 1.5em;
+      
+     }
+      .imgPart {
+
+  height: 150px;
+  width:250px;
+   
+  
+  
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: -2%;
+}
+.gridItem {
+  
+  display:inline-flex;
+  flex-direction: row;
+  margin-top:1%;
+  
+   width: 15em;
+   padding: 2em;
+ 
+ 
+   
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+.eachArticle:link {
+color: white;
+}
+
+
+.eachArticle:visited {
+color: white;
+}
+
+
+.eachArticle:hover {
+color: yellow;
+}
+
+
+.eachArticle:active {
+color: white;
+}
+
+
+.articlesList {
+
+width: 100em;
+margin:auto;
+
+}
+
+.articleBox {
+border: 2px solid white;
+background-color: #BB2525;
+height:20em;
+border-radius: 5px;
+
+}
+
+
+.titlePart {
+font-size: 1.25em;
+text-align: center;
+}
+
+.authorPart {
+color:white;
+text-align: right;
+margin-right: 5%;
+
+}
+.imgPart {
+
+  height: 150px;
+  width:250px;
+   }
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gridItem {
+  
+  display:inline-flex;
+  flex-direction: row;
+  margin-top:1%;
+ 
+   width: 15em;
+   padding: 2em;
+ 
+}
+
+ul {
+  list-style-type: none;
+}
+
+.eachArticle:link {
+color: white;
+}
+
+
+.eachArticle:visited {
+color: white;
+}
+
+
+.eachArticle:hover {
+color: yellow;
+}
+
+
+.eachArticle:active {
+color: white;
+}
+
+
+.articlesList {
+
+width: 100em;
+margin:auto;
+
+}
+
+.articleBox {
+border: 2px solid white;
+background-color: #BB2525;
+height:20em;
+border-radius: 5px;
+
+}
+
+
+.titlePart {
+font-size: 1.25em;
+text-align: center;
+}
+
+.authorPart {
+color:white;
+text-align: right;
+margin-right: 5%;
+
+}
+}
