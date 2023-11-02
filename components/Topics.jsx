@@ -33,8 +33,7 @@ export default function Topics(props) {
   if (isLoading) return <p>Loading...</p>
 
     return (
-      
-    <div className="topics">
+      <>
       <select value={topic.slug} onChange={e=> setTopic(e.target.value)}>
       {
         topics.map((topic,i)=> {
@@ -44,6 +43,8 @@ export default function Topics(props) {
         })
       }
 </select>
+    <div className="grid">
+      
 
 <ul>
   <h1>{topic.slug}</h1>
@@ -54,7 +55,7 @@ export default function Topics(props) {
 </ul>
     </div>
   
-    
+    </>
     )
   }
 
