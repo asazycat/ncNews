@@ -70,6 +70,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
    text-align: center;
+   width: 100%;
 }
 .gridItem {
   
@@ -441,7 +442,7 @@ margin:auto;
 }
 
 .articleBox {
-border: 2px solid white;
+
 background-color: #BB2525;
 height:20em;
 border-radius: 5px;
@@ -459,6 +460,29 @@ color:white;
 text-align: right;
 margin-right: 5%;
 
+}
+
+.slideImg {
+  
+  height: 30em;
+  width:30em;
+}
+.slideShow {
+  text-align: center;
+}
+
+.previousSlide , .nextSlide {
+
+border:0;
+background-color: #BB2525;
+color: aliceblue;
+margin-left: 5%;
+margin-top: 35%;
+font-size: 2em;
+}
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
 }
 }
 
@@ -550,7 +574,7 @@ margin-right: 5%;
     }
     
     .articleBox {
-    border: 2px solid white;
+    
     background-color: #BB2525;
     height:20em;
     border-radius: 5px;
@@ -621,7 +645,7 @@ margin-right: 5%;
     }
     
     .articleBox {
-    border: 2px solid white;
+  
     background-color: #BB2525;
     height:20em;
     border-radius: 5px;
@@ -639,6 +663,29 @@ margin-right: 5%;
     text-align: right;
     margin-right: 5%;
     
+    }
+
+    .slideImg {
+  
+      height: 20em;
+      width:20em;
+    }
+    .slideShow {
+      text-align: center;
+    }
+    
+    .previousSlide , .nextSlide {
+    
+    border:0;
+    background-color: #BB2525;
+    color: aliceblue;
+    margin-left: 5%;
+    margin-top: 35%;
+    font-size: 2em;
+    }
+    .buttons {
+      margin-left: auto;
+      margin-right: auto;
     }
 }
 
