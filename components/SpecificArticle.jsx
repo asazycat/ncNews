@@ -50,7 +50,7 @@ return (
     
     </div>
 
-    <Comments article_id={article_id}/>
+    {/* <Comments article_id={article_id}/> */}
      
     </>
 )

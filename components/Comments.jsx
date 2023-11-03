@@ -2,7 +2,7 @@
 import { useState,useEffect } from "react"
 import {getCommentsByArticleId} from '../util.js/util'
 import EachComment from "./EachComment"
-import { Link } from "react-router-dom"
+import PropTypes from 'prop-types';
 import PostComment from "./PostComment"
 
 
@@ -45,4 +45,7 @@ function Comments (props) {
 
 }
 
+Comments.propTypes = { 
+    article_id: PropTypes.number
+  }
 export default Comments
