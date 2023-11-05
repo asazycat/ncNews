@@ -31,7 +31,7 @@ export default function Slideshow () {
          <img src={article.article_img_url} alt={article.title} className="slideImg"/>
         
 </div>
-<div className="buttons">
+<div className="buttonss">
 <button onClick={previousSlide} className="previousSlide"> 
 ←
         </button>

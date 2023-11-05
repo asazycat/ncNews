@@ -52,10 +52,10 @@ function Upvotes(props) {
 
 return (
    
-    <div className='buttons'>
+    <div className='buttonsU'>
+   
+
    <p className='voteMsg'> {newVote} {errMsg}</p>
-
-
  <button onClick={handleOnclick} className="voteButton">⬆️        
  </button> 
   <button onClick={handleOnclick2} className="voteButton"> ⬇️  

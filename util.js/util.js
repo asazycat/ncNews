@@ -88,3 +88,10 @@ export const getArticlesByTopic = (topic) => {
    })
 }
 
+export const getUsers = (username) => {
+   return apiArticle.get('/users').then((res)=> {
+      const filtered = res.data.users.filter((user) => { if ( user.username === username) return user})
+
+      return filtered
+   })
+}

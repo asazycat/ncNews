@@ -43,14 +43,14 @@ return (
 
     
     
-    <Upvotes votes={article.votes} setVotes={setVotes} id={article.article_id}/>
+    
 
-   
+    <Upvotes votes={article.votes} setVotes={setVotes} id={article.article_id}/>
 
     
     </div>
-
-    {/* <Comments article_id={article_id}/> */}
+    
+    <Comments article_id={article_id}/>
      
     </>
 )

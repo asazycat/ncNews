@@ -1,8 +1,10 @@
 
 import { Link } from "react-router-dom"
+import { SpecificLoginContext } from "./contexts/SpecificLogin"
+import { useContext } from "react"
 function Header() {
- 
-
+      const {user} = useContext(SpecificLoginContext) 
+      console.log(user)
     return (
       <div className="header">
           <h1 className='mainH'>Northcoders News Network</h1>
@@ -23,12 +25,12 @@ function Header() {
      </Link></li>
     
      </ul>
-     <div className="hamburger">
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-            </div>
+     
     </nav>
+    <div className="user">
+      <p className="usernameDisplay">{user.username}</p>
+      <img src={user.avatar_url} height="50px" width="50px" className="imgProf"/>
+    </div>
     </div>
     )
   }

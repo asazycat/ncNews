@@ -1,4 +1,4 @@
-import React from 'react'
+import { SpecificLoginProvider } from '../components/contexts/SpecificLogin.jsx';
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -8,8 +8,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <SpecificLoginProvider>
   <BrowserRouter>
     <App />
   </BrowserRouter>
+  </SpecificLoginProvider>
 
 )

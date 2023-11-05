@@ -7,13 +7,14 @@ body {
   
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+ 
   flex-wrap: wrap;
   width: 100%;
- background-color: brown;
+ background-color: #a52a2a;
   font-size: 1.5em;
   color: azure;
  border: 0;
+ justify-content: space-between;
 }
 nav {
  display:flex;
@@ -180,12 +181,13 @@ height: 30em;
 }
 
 
-.buttons {
+.buttonss {
 display:flex;
 align-items: center;
 width:5em;
 height: 0.5em;
-
+margin-left: auto;
+margin-right: auto;
 
 }
 
@@ -196,7 +198,7 @@ text-align: right;
 
 .voteButton {
 font-size: 2em;
-background-color:#BB2525;
+
 padding:0px;
 border: none;
 margin-left: 5px;
@@ -222,43 +224,33 @@ margin-right: auto;
 
 
 
+.buttonsU
+{
+  display: flex;
+}
 
 
 
 
+.listOfComments {
+  margin-top: 0;
+  background-color: #f2efef;
 
-/* .listOfComments {
-background-color: ;
 
-
-} */
+}
 
 .comment {
-border: 2px solid white;
-background-color: #BB2525;
-color: white;
-margin-top: 5%;
-border-radius: 2em;
-padding:1em;
-width:55em;
+
 }
 
 
 
 .cat {
-display: flex;
+
 
 }
 .postComment {
-margin-top: 5%;
-margin-left: 15%;
-display:block ;
-border: 2px solid white;
-background-color: #BB2525;
-color: white;
-height: 15em;
-border-radius: 2em;
-padding: 1em
+
 }
 
 .slideImg {
@@ -280,13 +272,36 @@ margin-top: 35%;
 font-size: 2em;
 }
 .buttons {
+
+}
+
+.user {
+  display: flex;
+
+
+ border-radius: 15px ;
+line-height: 1em;
+ padding:1em;
+}
+
+.imgProf {
+
+  border-radius: 25px;
+  background-color: antiquewhite;
+ height: 2em;
+  
+ 
+}
+.usernameDisplay {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5%;
+}
+
+.buttonsS {
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
-
 
 @media only screen and (max-width: 750px) {
   
@@ -540,7 +555,7 @@ font-size: 2em;
   
   .voteButton {
   font-size: 2em;
-  background-color:#BB2525;
+
   padding:0px;
   border: none;
   margin-left: 5px;
@@ -578,32 +593,55 @@ font-size: 2em;
   } */
   
   .comment {
-  border: 2px solid white;
-  background-color: #BB2525;
-  color: white;
-  margin-top: 5%;
-  border-radius: 2em;
-  padding:1em;
-  width:55em;
+
   }
   
   
   
   .cat {
-  display: flex;
+
   
   }
   .postComment {
-  margin-top: 5%;
-  margin-left: 15%;
-  display:block ;
-  border: 2px solid white;
-  background-color: #BB2525;
-  color: white;
-  height: 15em;
-  border-radius: 2em;
-  padding: 1em
+  
   }
+}
+
+.login > form {
+  
+ 
+  display: flex;
+  flex-direction: column;
+ text-align: left;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ justify-content: center;
+  background-color: #BB2525;
+  color:#f5f5f5;
+  padding:2em;
+ font-size: 2em;
+ border-radius: 3em;
+ 
+} 
+
+.login {
+
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+.loginButton {
+  border:0;
+ 
+  margin-top: 5%;
+  width: 100%;
+  font-size: 1em;
+  background-color: #b24f4f;
+  
+  color:antiquewhite;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media only screen and (max-width: 505px) {
@@ -856,7 +894,7 @@ font-size: 2em;
       
       .voteButton {
       font-size: 2em;
-      background-color:#BB2525;
+     
       padding:0px;
       border: none;
       margin-left: 5px;
@@ -888,37 +926,23 @@ font-size: 2em;
       
       
       /* .listOfComments {
-      background-color: ;
+
       
       
       } */
       
       .comment {
-      border: 2px solid white;
-      background-color: #BB2525;
-      color: white;
-      margin-top: 5%;
-      border-radius: 2em;
-      padding:1em;
-      width:55em;
+   
       }
       
       
       
       .cat {
-      display: flex;
+    
       
       }
       .postComment {
-      margin-top: 5%;
-      margin-left: 15%;
-      display:block ;
-      border: 2px solid white;
-      background-color: #BB2525;
-      color: white;
-      height: 15em;
-      border-radius: 2em;
-      padding: 1em
+   
       }
 }
 
@@ -1149,7 +1173,7 @@ margin-right: 5%;
   
   .voteButton {
   font-size: 2em;
-  background-color:#BB2525;
+
   padding:0px;
   border: none;
   margin-left: 5px;
@@ -1181,37 +1205,23 @@ margin-right: 5%;
   
   
   /* .listOfComments {
-  background-color: ;
+
   
   
   } */
   
   .comment {
-  border: 2px solid white;
-  background-color: #BB2525;
-  color: white;
-  margin-top: 5%;
-  border-radius: 2em;
-  padding:1em;
-  width:55em;
+
   }
   
   
   
   .cat {
-  display: flex;
+
   
   }
   .postComment {
-  margin-top: 5%;
-  margin-left: 15%;
-  display:block ;
-  border: 2px solid white;
-  background-color: #BB2525;
-  color: white;
-  height: 15em;
-  border-radius: 2em;
-  padding: 1em
+  
   }
 }
 
@@ -1442,7 +1452,7 @@ margin-right: 5%;
   
   .voteButton {
   font-size: 2em;
-  background-color:#BB2525;
+ 
   padding:0px;
   border: none;
   margin-left: 5px;
@@ -1474,19 +1484,13 @@ margin-right: 5%;
   
   
   /* .listOfComments {
-  background-color: ;
+
   
   
   } */
   
   .comment {
-  border: 2px solid white;
-  background-color: #BB2525;
-  color: white;
-  margin-top: 5%;
-  border-radius: 2em;
-  padding:1em;
-  width:55em;
+
   }
   
   
@@ -1496,14 +1500,6 @@ margin-right: 5%;
   
   }
   .postComment {
-  margin-top: 5%;
-  margin-left: 15%;
-  display:block ;
-  border: 2px solid white;
-  background-color: #BB2525;
-  color: white;
-  height: 15em;
-  border-radius: 2em;
-  padding: 1em
+
   }
 }
