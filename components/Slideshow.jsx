@@ -6,10 +6,11 @@ export default function Slideshow () {
 
     const [article, setArticle] = useState({})
     const [slide, setSlide] = useState(1)
-  
+    const [isLoading, setIsLoading] = useState(true);
     useEffect(()=> {
-        getArticleById(slide).then((data) => {console.log(data)
+        getArticleById(slide).then((data) => {console.log('cat' + data)
         setArticle(data)
+        setIsLoading(false)
         })
     }, [slide])
      
@@ -24,8 +25,9 @@ export default function Slideshow () {
         if (newSlide <= 1) { newSlide = 1}
         setSlide(newSlide)
   }
-
+  if (isLoading) return <p>Loading...</p>
     return (<>
+
     <div className="slideShow">
          <h1>{article.title}</h1>
          <img src={article.article_img_url} alt={article.title} className="slideImg"/>
